@@ -1,0 +1,151 @@
+/* Definindo um fundo gradiente com transições suaves */
+body {
+    font-family: 'Stylish', sans-serif;
+    background: radial-gradient(circle, #800000, #000000);
+    color: #fff;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Definindo o cabeçalho com o efeito neon no título */
+header {
+    text-align: center;
+    padding: 20px 0;
+    background-color: rgba(0, 0, 0, 0.7);
+    border-bottom: 2px solid #0066cc;
+}
+
+header h1 {
+    font-family: 'DM Serif Text', serif;
+    color: transparent;
+    font-size: 3rem;
+    background-image: linear-gradient(45deg, #ffffff, #ffffff); /* Gradiente branco para o efeito neon */
+    background-clip: text; /* Faz com que o gradiente apareça no texto */
+    -webkit-background-clip: text; /* Necessário para alguns navegadores */
+    text-shadow: 0 0 10px rgba(255, 255, 255, 0.8), 0 0 20px rgba(255, 255, 255, 0.6), 0 0 30px rgba(255, 255, 255, 0.4); /* Efeito de brilho neon branco */
+    margin: 0;
+    animation: neon-flicker 1.5s infinite alternate; /* Animação de cintilação do neon */
+}
+
+/* Animação de cintilação do neon */
+@keyframes neon-flicker {
+    0% {
+        text-shadow: 0 0 5px rgba(255, 255, 255, 0.8), 0 0 10px rgba(255, 255, 255, 0.6), 0 0 15px rgba(255, 255, 255, 0.4);
+    }
+    50% {
+        text-shadow: 0 0 10px rgba(255, 255, 255, 0.8), 0 0 15px rgba(255, 255, 255, 0.6), 0 0 20px rgba(255, 255, 255, 0.4);
+    }
+    100% {
+        text-shadow: 0 0 20px rgba(255, 255, 255, 0.8), 0 0 30px rgba(255, 255, 255, 0.6), 0 0 40px rgba(255, 255, 255, 0.4);
+    }
+}
+
+/* Estilizando as seções de conteúdo */
+.content {
+    padding: 40px;
+}
+
+section h2 {
+    color: #0066cc;
+    font-size: 2rem;
+    text-align: center;
+    margin-bottom: 20px;
+    font-family: 'Nerko One', sans-serif;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+}
+
+section p {
+    font-size: 1rem;
+    line-height: 1.6;
+}
+
+/* Estilo para as imagens com borda amarela neon */
+img {
+    border: 1px solid #f0ff00; /* Borda amarela neon */
+    border-radius: 8px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    cursor: pointer;
+}
+
+/* Efeito de hover nas imagens */
+img:hover {
+    transform: scale(1.1);
+    box-shadow: 0 4px 10px rgba(255, 255, 0, 0.5); /* Efeito de sombra amarela neon */
+}
+
+/* Estilizando a seção de membros */
+.members {
+    padding: 40px;
+}
+
+.members-container {
+    display: flex; /* Usando flexbox para exibir os membros lado a lado */
+    justify-content: space-around; /* Espaço entre as imagens */
+    overflow-x: auto; /* Rolagem horizontal se necessário */
+    gap: 20px; /* Espaçamento entre os membros */
+}
+
+.member {
+    display: inline-block;
+    text-align: center;
+}
+
+.member img {
+    width: 180px; /* Tamanho fixo para as imagens */
+    height: 180px; /* Tamanho fixo para as imagens */
+}
+
+/* Efeito Neon para os nomes dos membros */
+.member p {
+    font-size: 1.2rem;
+    font-family: 'Nerko One', sans-serif;
+    font-weight: bold;
+    color: transparent;
+    background-image: linear-gradient(45deg, #ff0000, #8000ff, #00ffff); /* Gradiente de vermelho, roxo e azul */
+    background-clip: text; /* Faz com que o gradiente apareça no texto */
+    -webkit-background-clip: text; /* Necessário para alguns navegadores */
+    text-shadow: 0 0 10px rgba(255, 0, 0, 0.8), 0 0 20px rgba(255, 0, 0, 0.6), 0 0 30px rgba(255, 0, 0, 0.4); /* Efeito de brilho neon */
+    animation: neon-flicker 1.5s infinite alternate; /* Animação de cintilação do neon */
+}
+
+/* Animação de cintilação do neon */
+@keyframes neon-flicker {
+    0% {
+        text-shadow: 0 0 5px rgba(255, 0, 0, 0.8), 0 0 10px rgba(255, 0, 0, 0.6), 0 0 15px rgba(255, 0, 0, 0.4);
+    }
+    50% {
+        text-shadow: 0 0 10px rgba(255, 0, 0, 0.8), 0 0 15px rgba(255, 0, 0, 0.6), 0 0 20px rgba(255, 0, 0, 0.4);
+    }
+    100% {
+        text-shadow: 0 0 20px rgba(255, 0, 0, 0.8), 0 0 30px rgba(255, 0, 0, 0.6), 0 0 40px rgba(255, 0, 0, 0.4);
+    }
+}
+
+/* Seção do canal do YouTube */
+.youtube-channel {
+    text-align: center;
+    margin-top: 40px;
+}
+
+.neobaka-logo {
+    width: 200px;
+    height: 200px;
+    border-radius: 8px;
+    border: 1px solid #f0ff00; /* Borda amarela neon no logo */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    cursor: pointer;
+}
+
+.neobaka-logo:hover {
+    transform: scale(1.1);
+    box-shadow: 0 4px 10px rgba(255, 255, 0, 0.5);
+}
+
+/* Adicionando responsividade para dispositivos móveis */
+@media (max-width: 768px) {
+    .members-container {
+        flex-direction: column; /* Colocar as imagens em coluna em telas pequenas */
+        align-items: center; /* Alinha os itens ao centro */
+    }
+}
